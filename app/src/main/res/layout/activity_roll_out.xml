@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RollOut">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/MyFrameStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/checkname"
+                        style="@style/Mystyle"
+                        android:text="Name"
+                        android:layout_weight="1.4"
+                        android:drawableStart="@drawable/person"/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/checkgender"
+                    style="@style/Mystyle"
+                    android:text="Gender"
+                    android:drawableStart="@drawable/gender"/>
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/checkemail"
+                    style="@style/Mystyle"
+                    android:text="Email"
+                    android:drawableStart="@drawable/mail"/>
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/checkphone"
+                    style="@style/Mystyle"
+                    android:text="Phone"
+                    android:drawableStart="@drawable/phone" />
+
+
+
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/checkrollno"
+                    style="@style/Mystyle"
+                    android:ems="12"
+                    android:text="Roll Number"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ff000000"
+                    android:drawableStart="@drawable/roll"/>
+
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/checkevent"
+                    style="@style/Mystyle"
+                    android:ems="12"
+                    android:text="Events"
+                    android:textAllCaps="true"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ff000000"
+                    android:drawableStart="@drawable/events"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:text="*This is your final submission, If you want to edit, your data  will be overwritten"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="textStart"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/checkedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:onClick="checkedit"/>
+
+            <Button
+                android:id="@+id/checksubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:onClick="checksubmit"
+                app:layout_constraintTop_toTopOf="@+id/checkedit"
+                app:layout_constraintBottom_toBottomOf="@+id/checkedit"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

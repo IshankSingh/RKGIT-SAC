@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context=".RegisterActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+
+                <EditText
+                    android:id="@+id/editeventtxtnamefirst"
+                    style="@style/Mystyle"
+                    android:text="Name"
+                    android:textColorHint="@color/white_grey"
+                    android:ems="12"
+                    android:drawableStart="@drawable/person"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <EditText
+                    android:id="@+id/editeventtxtrollnofirst"
+                    style="@style/Mystyle"
+                    android:ems="12"
+                    android:textColorHint="@color/white_grey"
+                    android:hint="Roll Number"
+                    android:inputType="textPersonName"
+                    android:drawableStart="@drawable/roll"/>
+
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <EditText
+                    android:id="@+id/editeventtxteventfirst"
+                    style="@style/Mystyle"
+                    android:ems="12"
+                    android:hint="Events"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/white_grey"
+                    android:drawableStart="@drawable/events"/>
+            </FrameLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                android:id="@id/checkcardview"/>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/editeventtxtgenderfirst"
+                    style="@style/Mystyle"
+                    android:text="Gender"
+                    android:visibility="invisible"
+                    android:drawableStart="@drawable/gender"/>
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/editeventtxtemailfirst"
+                    style="@style/Mystyle"
+                    android:text="Email"
+                    android:visibility="invisible"
+                    android:drawableStart="@drawable/mail"/>
+            </FrameLayout>
+
+            <FrameLayout style="@style/MyFrameStyle">
+
+                <TextView
+                    android:id="@+id/editeventtxtphonefirst"
+                    style="@style/Mystyle"
+                    android:text="Phone"
+                    android:visibility="invisible"
+                    android:drawableStart="@drawable/phone" />
+
+
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+</ScrollView>

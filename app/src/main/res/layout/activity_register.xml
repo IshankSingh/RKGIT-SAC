@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/MyFrameStyle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <TextView
+                android:id="@+id/eventtxtname"
+                style="@style/Mystyle"
+                android:text="Name"
+                android:layout_weight="1.4"
+                android:drawableStart="@drawable/person"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit"
+                    android:layout_marginTop="12dp"
+                    android:onClick="edit"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/MyFrameStyle">
+
+            <TextView
+                android:id="@+id/eventtxtgender"
+                style="@style/Mystyle"
+                android:text="Gender"
+                android:drawableStart="@drawable/gender"/>
+        </FrameLayout>
+
+        <FrameLayout style="@style/MyFrameStyle">
+
+            <TextView
+                android:id="@+id/eventtxtemail"
+                style="@style/Mystyle"
+                android:text="Email"
+                android:drawableStart="@drawable/mail"/>
+        </FrameLayout>
+
+        <FrameLayout style="@style/MyFrameStyle">
+
+            <TextView
+                android:id="@+id/eventtxtphone"
+                style="@style/Mystyle"
+                android:text="Phone"
+                android:drawableStart="@drawable/phone" />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout style="@style/MyFrameStyle">
+
+            <EditText
+                android:id="@+id/eventtxtrollno"
+                style="@style/Mystyle"
+                android:ems="12"
+                android:hint="Roll Number"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white_grey"
+                android:drawableStart="@drawable/roll"/>
+
+        </FrameLayout>
+
+        <FrameLayout style="@style/MyFrameStyle">
+
+            <EditText
+                android:id="@+id/eventtxtevent"
+                style="@style/Mystyle"
+                android:ems="12"
+                android:hint="Events"
+                android:textAllCaps="true"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white_grey"
+                android:drawableStart="@drawable/events"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="* ENTER COMPLETE EVENT NAME LIKE SINGING, DANCE, ETC ELSE REGISTRATION WILL BE CANCELLED "
+            android:textSize="14dp"
+            android:layout_marginLeft="25sp"
+            android:paddingBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="40dp"
+        android:id="@+id/checkcardview"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorAccent">
+
+        <ImageView
+            android:src="@drawable/submiticon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

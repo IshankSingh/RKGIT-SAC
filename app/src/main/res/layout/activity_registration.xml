@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/registernametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:backgroundTint="#776677"
+                    android:ems="13"
+                    android:hint="Name"
+                    android:textColor="#ff000000"
+                    android:textColorHint="@color/white_grey"
+                    android:textCursorDrawable="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22sp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/txtname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="47sp"
+                    android:backgroundTint="#776677"
+                    android:text="Male"
+                    android:onClick="onRadioButtonClicked"
+                    android:textColor="#ff000000"
+                    android:textColorLink="#776677"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60sp"
+                    android:backgroundTint="#776677"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Female"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/radioSex"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/registernumbertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#776677"
+                    android:textColorHint="@color/white_grey"
+                    android:ems="13"
+                    android:hint="Phone"
+                    android:label="Phone"
+                    android:inputType="phone"
+                    android:textColor="#ff000000"
+                    android:textCursorDrawable="@null"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtphone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/registeremailtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#776677"
+                    android:ems="13"
+                    android:textColorHint="@color/white_grey"
+                    android:hint="Email"
+                    android:textColor="#ff000000"
+                    android:textCursorDrawable="@null"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#776677"
+                app:layout_constraintTop_toBottomOf="@+id/txtemail"
+                android:textColorHint="@color/white_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/registerpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#776677"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/white_grey"
+                    android:password="true"
+                    android:ems="13"
+                    android:hint="Password"
+                    android:textColor="#ff000000"
+                    android:textCursorDrawable="@null"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerbutton"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:background="#776677"
+                android:text="Create Account"
+                android:textColor="#f0f0f0"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/txtpassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/registerlogintextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                android:text="Login"
+                android:textColor="#776677"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/registerbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

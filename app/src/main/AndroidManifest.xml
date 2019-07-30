@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.torqueblueblood.application.rkgitsac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logomain_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logomain_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="Create Your RKGIT SAC Account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+
+            android:excludeFromRecents="true"
+            android:label="Student Activity Council"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotpasswordActivity"
+            android:label="Change Password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Slide"
+            android:label="Lets Go"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register Here"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalenderActivity"
+            android:label="Calender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneVerification"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Album"
+            android:label="Photos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Albumview"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".Service.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DeveloperPage"
+            android:label="Developers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileEdit"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MembersActivity"
+            android:label="SAC Members"/>
+        <activity android:name=".RollOut"
+            android:label="Final Submit"></activity>
+    </application>
+
+</manifest>

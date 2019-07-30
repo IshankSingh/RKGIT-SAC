@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DeveloperPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar">
+
+    <TextView
+        style="@style/Mystyle"
+        android:id="@+id/zatin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="This project is made under CSE Department under the guidance of Zatin Sir"
+        android:textAlignment="textStart"/>
+
+    <ImageView
+        android:id="@+id/ishank"
+        style="@style/MyImageStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ishank_round"
+        android:contentDescription="TODO"
+        app:layout_constraintTop_toBottomOf="@id/zatin"/>
+
+    <TextView
+        android:id="@+id/ishanktext"
+        style="@style/MyDeveloperStyle"
+        android:text="ISHANK SINGH"
+        app:layout_constraintStart_toEndOf="@+id/ishank"
+        app:layout_constraintTop_toTopOf="@+id/ishank"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/ishanktext2"
+        style="@style/MyDeveloperStyle"
+        android:text="(Coder, UI Design)"
+        app:layout_constraintStart_toEndOf="@+id/ishank"
+        app:layout_constraintTop_toBottomOf="@+id/ishanktext" />
+
+    <ImageView
+        android:id="@+id/vipin"
+        style="@style/MyImageStyle"
+        app:layout_constraintTop_toBottomOf="@+id/ishank"
+        app:srcCompat="@mipmap/veer_round" />
+
+    <TextView
+        android:id="@+id/vipintext"
+        style="@style/MyDeveloperStyle"
+        android:layout_marginTop="20dp"
+        android:text="VIPIN KUMAR YADAV"
+        app:layout_constraintStart_toEndOf="@+id/vipin"
+        app:layout_constraintTop_toTopOf="@+id/vipin" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/MyDeveloperStyle"
+        android:text="(Coder)"
+        app:layout_constraintStart_toEndOf="@+id/vipin"
+        app:layout_constraintTop_toBottomOf="@+id/vipintext" />
+
+    <ImageView
+        android:id="@+id/abhishek"
+        style="@style/MyImageStyle"
+        app:layout_constraintTop_toBottomOf="@+id/vipin"
+        app:srcCompat="@mipmap/abhi_round"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/abhishektext"
+        style="@style/MyDeveloperStyle"
+        android:text="Abhishek Yadav"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toEndOf="@id/abhishek"
+        app:layout_constraintTop_toTopOf="@+id/abhishek"/>
+
+    <TextView
+        android:id="@+id/abhishektext2"
+        style="@style/MyDeveloperStyle"
+        android:text="(UI and Photo Design, Helper)"
+        app:layout_constraintStart_toEndOf="@+id/abhishek"
+        app:layout_constraintTop_toBottomOf="@+id/abhishektext" />
+
+    <ImageView
+        android:id="@+id/satyam"
+        style="@style/MyImageStyle"
+        app:layout_constraintTop_toBottomOf="@+id/abhishek"
+        app:srcCompat="@mipmap/satyam_round"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/satyamtext"
+        style="@style/MyDeveloperStyle"
+        android:text="satyam singh"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toTopOf="@+id/satyam"
+        app:layout_constraintStart_toEndOf="@+id/satyam" />
+
+
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/MyDeveloperStyle"
+        android:text="(UI design, Helper)"
+        app:layout_constraintStart_toEndOf="@+id/satyam"
+        app:layout_constraintTop_toBottomOf="@+id/satyamtext"/>
+
+
+
+    <ImageView
+        android:id="@+id/faraz"
+        style="@style/MyImageStyle"
+        app:srcCompat="@mipmap/faraz_round"
+        app:layout_constraintTop_toBottomOf="@+id/satyam"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/faraztext"
+        style="@style/MyDeveloperStyle"
+        android:text="faraz naqvi"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toEndOf="@id/faraz"
+        app:layout_constraintTop_toTopOf="@id/faraz"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/faratext2"
+        style="@style/MyDeveloperStyle"
+        android:text="(UI Design, Helper)"
+        app:layout_constraintStart_toEndOf="@id/faraz"
+        app:layout_constraintTop_toBottomOf="@id/faraztext"/>
+
+    <ImageView
+        android:id="@+id/ankita"
+        style="@style/MyImageStyle"
+        android:src="@mipmap/logomain_round"
+        app:layout_constraintTop_toBottomOf="@id/faraz"/>
+
+    <TextView
+        android:id="@+id/ankitatext"
+        style="@style/MyDeveloperStyle"
+        android:text="ANKITA PANDEY"
+        app:layout_constraintStart_toEndOf="@id/ankita"
+        app:layout_constraintTop_toTopOf="@id/ankita"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/ankitatext2"
+        style="@style/MyDeveloperStyle"
+        android:text="(Logo Design, Helper)"
+        app:layout_constraintTop_toBottomOf="@id/ankitatext"
+        app:layout_constraintStart_toEndOf="@id/ankita"/>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
